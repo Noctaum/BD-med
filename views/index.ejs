@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+<div class="container">
+	
+	<% blogs.forEach(function(blog){ %>
+	<!-- <div class="card-deck">
+	  <div class="card">
+	    <div class="card-body">
+	      <h5 class="card-title"><%= blog.firstName %></h5>
+	      <p class="card-text"><%= blog.secondName %></p>
+	      <a href="/patients/<%= blog._id %>" class="btn btn-primary">Go somewhere</a>
+	      <p class="card-text"><small class="text-muted"><%= blog.created.toDateString() %></small></p>
+	    </div>
+	  </div>
+	 </div>
+ -->
+	   	<div class="card">
+		  <div class="card-body">
+		   	<h5 class="control"> <%= blog.firstName +" "+ blog.secondName %></h5>
+		   	<a href="/patients/<%= blog._id %>" class="btn btn-primary"><i class="fas fa-stethoscope"></i> To patient</a>
+		   	<div>
+		   	<p class="card-text control"><small class="text-muted"><%= blog.created.toDateString() %></small></p>
+		   </div>
+		  </div>
+		</div>
+	<% }) %>
+</div>
+<% include ./partials/footer %>

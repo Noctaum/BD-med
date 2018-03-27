@@ -1,0 +1,12 @@
+<% include ./partials/header %>
+<div class="container">
+<h1><%= blog.firstName + " " + blog.secondName %></h1>
+   <div class="form-group">
+    <h2><%= blog.image %></h2>
+  </div>
+  <a class="btn btn-primary edit" href="/patients/<%= blog._id %>/edit">Edit</a>
+    <form id="delete" action="/patients/<%= blog._id %>?_method=DELETE" method="POST">
+        <button class="btn btn-primary">Delete</button>
+    </form>
+</div>
+<% include ./partials/footer %>

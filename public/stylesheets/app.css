@@ -1,0 +1,29 @@
+/*.card{
+	min-width: 250px;
+	max-width: 610px;
+	margin: 10px auto;
+}*/
+
+.card{
+	width: 100%;
+	/*margin: 10px auto;*/
+	
+}
+
+.card-body{
+text-align:right;
+}
+
+.container{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.control{
+	float:left;
+}
+
+.edit{
+	float: left;
+	margin-right: 10px;
+}

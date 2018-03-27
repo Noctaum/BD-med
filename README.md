@@ -1,0 +1,2 @@
+mongod --dbpath database 
+//запуск 
